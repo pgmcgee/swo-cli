@@ -1,3 +1,6 @@
+# Delete build directory to clean
+Remove-Item -Path .\build -Recurse -Force -ErrorAction Ignore
+
 # Create build directory if it doesn't exist
 New-Item -ItemType Directory -Path .\build -Force
 
